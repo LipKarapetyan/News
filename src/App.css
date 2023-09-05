@@ -1,0 +1,163 @@
+.hed{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 110px;
+  background-color: rgb(66, 91, 66);
+  
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+select{
+  background-color: rgb(191, 218, 206);
+  margin-top: 10px;
+  cursor: pointer;
+  padding: 4px;
+
+}
+.new{
+  text-decoration: none;
+}
+.newHed{
+  font-size: 60px;
+  color: rgb(46, 153, 148);
+}
+input{
+  width: 400px;
+  height: 30px;
+}
+img{
+  width: 50px;
+  height: 70px;
+}
+.imgsize{
+  width: 400px;
+  height: 300px;
+  margin-left: 20px;
+}
+.mmm{
+  width: calc(33.33% - 20px); /* 20px is the total horizontal margin */
+  margin: 10px; /* Adjust margin as needed for spacing */
+  background-color: rgb(66, 91, 66);
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.basketcss{
+  display: flex;
+}
+.newsdiv{
+  display:flex;
+  flex-wrap: wrap;
+  
+}
+.diver{
+  display: flex;
+  flex-wrap: wrap;
+}
+.categori{
+  
+  display: flex;
+  justify-content: space-evenly;
+}
+.cat{
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+}
+.save{
+  width: 50px;
+  height: 56px;
+}
+.save1{
+  width: 50px;
+  height: 56px;
+  cursor: pointer;
+}
+.saveshare{
+  display: flex;
+  justify-content: flex-start;
+  
+}
+.next{
+  width: 40px;
+  height: 40px;
+  background-color:rgb(191, 218, 206) ;
+  border-radius: 50em;
+
+}
+.pagination{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.clicked{
+  background-color: rgb(255, 255, 255);
+}
+.active{
+  width: 40px;
+  height: 40px;
+  background-color:rgb(178, 59, 95) ;
+  border-radius: 50em;
+}
+.popup {
+  position: fixed;
+  top: 100px;
+  left: 100px;
+  width: 80%;
+  height: 80%;
+  background-color: rgb(59, 101, 99,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.pagdiv{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: rgb(66, 91, 66)
+;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+  max-width: 80%;
+  max-height: 80%;
+  overflow: auto;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+}
+.category1{
+  padding: 7px;
+  background-color: rgb(191, 218, 206);
+  cursor: pointer;
+  border-radius: 10px;
+  
+}
+.saveButon{
+  background-color:  rgb(66, 91, 66);;
+  border: none;
+  cursor: pointer;
+}
+body{
+  background-color: rgb(59, 101, 99)
+}
+.guyn{
+  background-color: red;
+}

@@ -42,12 +42,9 @@ function NewsFunc() {
     const news = useSelector(selectPro)
 
     console.log(news);
-
-   
-   
-   
-
-
+function closepmp() {
+    return ""
+}
 
     return (
 
@@ -74,7 +71,7 @@ function NewsFunc() {
                 <Newsreq />
 
 
-                <div onClick={selectedNews !== null ? closePopup : ""} className="newsdiv" >
+                <div onClick={selectedNews !== null ? closePopup : closepmp} className="newsdiv" >
 
                     {displayedNews.map((el) => (
                         <div className="mmm" key={Math.random()} >

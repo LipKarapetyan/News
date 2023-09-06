@@ -4,9 +4,10 @@ import { useDispatch, useSelector } from "react-redux";
 import Newsreq from "../Lib/NewsRequest";
 import Newss from "./Newss";
 import Category from "./Category";
-import { handleCauntry } from "../store/CountrySlice";
+import Country from "./Country";
 
 import Basket from "../Basket";
+import { data } from "./Category";
 
 
 function NewsFunc() {
@@ -37,39 +38,14 @@ function NewsFunc() {
         setSelectedNewsUrl(null);
     };
 
-    const [inputValue, SetinputValue] = useState("us")
+    
     const news = useSelector(selectPro)
 
     console.log(news);
 
-    const data = [
-        {
-            text: "general"
-        },
-        {
-            text: "business"
-        },
-        {
-            text: "entertainment"
-        },
-        {
-            text: "health"
-        },
-        {
-            text: "sports"
-        },
-        {
-            text: "technology"
-        }
-
-    ]
-    console.log(inputValue);
-    const dispatch = useDispatch()
-    function toglClick() {
-        dispatch(handleCauntry({
-            country: inputValue
-        }))
-    }
+   
+   
+   
 
 
 
@@ -93,15 +69,7 @@ function NewsFunc() {
                             )
                         })
                     }
-                    <select onClick={toglClick} value={inputValue} onChange={(e) => SetinputValue(e.target.value)}>
-                        <option value="us" >Country</option>
-                        <option value="ar">Argentina</option>
-                        <option value="au">Australia</option>
-                        <option value="it">Italaia</option>
-                        <option value="at">Austria</option>
-                        <option value="be">Belgium</option>
-                        <option value="br">Brazilia</option>
-                    </select>
+                    <Country />
                 </div>
                 <Newsreq />
 
